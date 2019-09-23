@@ -1,0 +1,26 @@
+{
+    "name": "dhanangpratama/auth-module",
+    "type": "laravel-module",
+    "description": "Module auth for laravel modules",
+    "authors": [
+        {
+            "name": "Dhanang Pratama",
+            "email": "dhanangarfian@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Auth\\Providers\\AuthServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Auth\\": ""
+        }
+    }
+}
