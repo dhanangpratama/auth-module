@@ -42,4 +42,14 @@ class ForgotPasswordController extends Controller
     {
         return back()->with('status', ['type' => 'success', 'message' => trans($response)]);
     }
+
+    /**
+     * Display the form to request a password reset link.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function showLinkRequestForm()
+    {
+        return view('auth::passwords.email');
+    }
 }

@@ -63,4 +63,14 @@ class LoginController extends Controller
             $this->credentials($request), $request->filled('remember')
         );
     }
+
+    /**
+     * Show the application's login form.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function showLoginForm()
+    {
+        return view('auth::login');
+    }
 }
