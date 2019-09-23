@@ -1,13 +1,27 @@
 {
     "name": "dhanangpratama/auth-module",
     "type": "laravel-module",
-    "description": "Module auth for laravel modules",
+    "description": "User module for laravel modules. Build on top of https://github.com/nWidart/laravel-modules",
+    "keywords": [
+        "module",
+        "laravel-module",
+        "laravel"
+    ],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/dhanangpratama/auth-module/issues",
+        "source": "https://github.com/dhanangpratama/auth-module"
+    },
     "authors": [
         {
             "name": "Dhanang Pratama",
             "email": "dhanangarfian@gmail.com"
         }
     ],
+    "require": {
+        "php": ">=7.1",
+        "dhanangpratama/user-module": "dev-master"
+    },
     "extra": {
         "laravel": {
             "providers": [
@@ -22,5 +36,7 @@
         "psr-4": {
             "Modules\\Auth\\": ""
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
